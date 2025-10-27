@@ -1,0 +1,54 @@
+these are the entities for banking user and account management system
+
+1.User Table:
+
+UserId (PK)
+FirstName
+LastName
+DOB
+Email
+PhoneNumber
+IsMinor (should check whether the user is above 18 or not)
+IsActive
+
+Branch
+
+BranchId (PK)
+BankId (FK)
+BranchName
+BranchCode
+Address
+PhoneNumber
+ManagerId (FK to User)
+CreatedAt
+
+Bank:
+
+BankId (PK)
+BankName
+OfficeAddress
+IFSCCode
+CreatedAt
+
+
+Account: 
+
+AccountId (PK)
+AccountNumber
+UserId (FK)
+BranchId (FK)
+AccountType (Savings, Current, TermDeposit)
+Currency (INR, USD, GBP)
+Balance
+IsJointAccount
+IsMinorOperated
+POAUserId (FK → another user)
+CreatedAt
+
+Role:
+RoleId (PK)
+RoleName
+Description
+
+
+status: still in progress.....
