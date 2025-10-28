@@ -1,0 +1,65 @@
+Problem statement:
+
+1. Requires a User and Account Management System that enables both customers and bank employees to securely manage user accounts, transactions, and branch operations under strict access control and validation rules.
+
+2. The system must support multiple banks, branches, and account types, while enforcing business constraints such as minor accounts, Power of Attorney (POA) operations, and role-based permissions for all actions.
+
+Explicit Requirements:
+
+-The system must handle two types of users — Normal User and Bank User (like Admin or Bank Manager).
+-Each user must have unique identification details such as name, DOB, email, and phone number.
+-User age must be validated — anyone below 18 is considered a minor.
+-Minor accounts can only be operated by a guardian or Power of Attorney (POA).
+-The system should support multiple banks and branches under each bank.
+-Each branch must store details like name, address, code, and branch manager.
+-Users can hold multiple accounts across different banks.
+-Account types include Savings, Current, and Term Deposit.
+-The system must include login and logout authentication for users.
+-It must have role-based authorization, where actions depend on user roles.
+-Roles include Admin, BankManager, and Customer.
+-Permissions must define what each role can do (e.g., create users, view transactions).
+-A user or bank employee cannot delete another user’s account.
+-Only the account owner or admin can close an account.
+-The system should support multi-currency accounts (like INR, USD, GBP).
+-Every operation must check the user’s role and permissions before allowing it.
+
+Implicit Requirements:
+
+-Each email must be unique and used as a login credential.
+-Passwords and sensitive data should be stored securely and encrypted.
+-The system should automatically identify minors based on DOB.
+-All transactions must record their amount, type, time, and status accurately.
+-Account balances should never go negative unless overdraft rules are explicitly defined.
+-A guardian or POA must already exist as a valid registered user.
+-The system must maintain referential integrity between users, accounts, banks, and branches.
+-Deleting a user or bank should not leave orphaned accounts or transactions.
+-Admins are responsible for managing roles and assigning permissions.
+-All validation and access checks must happen before any database updates.
+-The database should support consistent and secure transaction management.
+-The interface should ensure data accuracy and smooth operations across all modules.
+
+Entity	                 Attributes
+User	-------UserId(pk), Name, DOB, Email, UserType, GuardianId?(fk user.UserId), POAUserId?(fk user.UserId) this table isself referencing
+Bank--------BankId(pk), Name, IFSC_Prefix, Headquarters
+Branch-------BranchId(pk), BankId(fk bank.BankID), IFSC, Address
+Account-------AccountId(pk), UserId(fk user.UserId), BranchId(fk bank.BranchID), AccountType, Balance, CurrencyCode(fk Currency.CurrencyCode)
+Transaction-------TransactionId(pk), AccountId(fk Account.AccountID), Type, Amount, Date, Status
+Role-------------RoleId(pk), RoleName
+Permission	---------PermissionId(pk), PermissionName
+UserRole ---------UserId(User.UserId), RoleId(fk Role.RoleId) both (pk)
+RolePermission -----RoleId(fk Role.RoleId), PermissionId(fk Permission.PermissionId) both (pk)
+Currency----------CurrencyCode(pk), Name, Symbol
+
+
+Relationship               Relationship Type                Meaning                               
+
+User → Account           1–M                        One user can have many accounts      
+Account → Bank           M–1 (via Branch)       Each account belongs to one bank       
+Bank → Branch             1–M                       Each bank can have many branches       
+Account → Transaction  1–M                     One account can have many transactions 
+User → Role                 M–M                    Managed via UserRole                
+Role → Permission       M–M                     Managed via RolePermission           
+Account → Currency    M–1                    Each account uses one currency         
+
+
+

@@ -1,0 +1,70 @@
+User & Role
+
+-Every user has a unique email ID and phone number.
+-UserType determines high-level category (NormalUser or BankUser).
+-Each user can hold only one role at a time (Customer, BankManager, or Admin), though the system supports multiple role mappings if extended.-
+-Admins are responsible for creating banks, branches, and other users.
+
+Age & Minor Handling
+
+-The minimum age for independent account operation is 18 years.
+-Users below 18 are treated as minors and must be linked to a GuardianId or POAUserId.
+-The Guardian or POA must already exist as a valid, registered user in the system.
+-Each minor can have only one Guardian or POA at a time.
+
+Power of Attorney (POA)
+
+-POA users can perform limited account operations on behalf of the account holder (e.g., deposits, withdrawals).
+-POA cannot close or delete the account.
+-A POA relationship is valid only during the lifetime of the account holder (no transfer of authority).-
+-All POA operations are logged under the POA user’s ID for audit tracking.
+
+Account Management
+
+-Account numbers are unique across the entire system.
+-An account is always linked to one User, one Branch, and one Currency.
+-A user can have multiple accounts in different banks or branches.
+-Term deposits are treated as a type of account (AccountType = TermDeposit).
+-Each account maintains a balance, updated with every transaction.
+
+Bank & Branch
+
+-Each bank has a unique IFSC_Prefix.
+-Each branch has a unique full IFSC code derived from its parent bank’s prefix.
+-Each branch must be managed by one BankManager (linked to a user with UserType = BankUser).
+-Authentication & Authorization
+-All users must log in with credentials validated by the system.
+-Roles and permissions are pre-defined and stored in Role and Permission tables.
+-Every action (create, read, update, delete) must validate user permissions.
+
+Default roles:
+
+-Admin: Full system control
+-BankManager: Can manage branches and customer accounts within their branch
+-Customer: Can manage only their own accounts
+
+Account Deletion Policy
+
+-A normal user cannot delete or close another user’s account.
+-Bank employees also cannot delete customer accounts.
+-Only the account owner or admin can close the account, and only if the balance is zero.
+
+Currency & Transactions
+
+-Supported currencies include INR, USD, and GBP (can be extended later).
+-Conversion between currencies is not handled by this system (assumed to be pre-converted).
+-Every transaction has a timestamp and must belong to one account.
+-Transaction types include: Deposit, Withdrawal, Transfer, Interest Credit.
+
+Data Integrity & Relationships
+
+-Deleting a user automatically deactivates their accounts but does not delete transaction history.
+-Cascade deletes are disabled for safety; related entities must be updated manually.
+-Each relationship follows the cardinality defined in statement.txt.
+
+Scope Limitations
+
+-The system does not handle real-time currency conversion, loan processing, or interest rate computation (can be future extensions).
+-Joint accounts are not implemented in this version.
+-No support for multiple guardians or multiple POAs per account (one-to-one link only).
+-Assumes reliable network and database connectivity for all operations.
