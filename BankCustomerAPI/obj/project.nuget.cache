@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jaOqf9BD4ZlvBET/oXptHLe7UfDfeIGvL5BYwbQFeNNApF3S63p8r21+lKGS978uY3D9FQmKX/sRk3OVf+BNVQ==",
+  "dgSpecHash": "Tk2dMcWqAus+GDZk014dw1f/xIq5JF45+JZnyrR29Bn8IkT5zx9zi6d0N/hV5XBRxEAScF8Tf7YcgVfkmhpb3A==",
   "success": true,
-  "projectFilePath": "D:\\BankManagementAPI\\BankCustomerAPI.csproj",
+  "projectFilePath": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\madheesh.r\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\madheesh.r\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

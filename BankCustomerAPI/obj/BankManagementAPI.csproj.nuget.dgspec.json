@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI.csproj": {}
+    "D:\\Training\\submission\\BankCustomerAPI\\BankManagementAPI.csproj": {}
   },
   "projects": {
-    "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI.csproj": {
+    "D:\\Training\\submission\\BankCustomerAPI\\BankManagementAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI.csproj",
-        "projectName": "BankCustomerAPI",
-        "projectPath": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI.csproj",
+        "projectUniqueName": "D:\\Training\\submission\\BankCustomerAPI\\BankManagementAPI.csproj",
+        "projectName": "BankManagementAPI",
+        "projectPath": "D:\\Training\\submission\\BankCustomerAPI\\BankManagementAPI.csproj",
         "packagesPath": "C:\\Users\\madheesh.r\\.nuget\\packages\\",
         "outputPath": "D:\\Training\\submission\\BankCustomerAPI\\obj\\",
         "projectStyle": "PackageReference",
