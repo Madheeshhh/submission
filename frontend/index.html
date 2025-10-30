@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Assignment Page</title>
+    <link rel="stylesheet" href="styles1.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Hi there, I'm <span>Madhee</span></h1>
+        <button>Say Hello!</button>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About These Pictures</h2>
+      <p>
+        Each photo you see below has its own story — a captured moment that
+        speaks louder than words. From sunlit skies to quiet reflections, these
+        snapshots freeze time and emotion together. Photography, after all,
+        isn’t just about clicking the shutter; it’s about seeing what others
+        miss and framing it forever.
+      </p>
+    </section>
+
+    <div id="pic">
+        <h2>Have a look into this</h2>
+        <table cellspacing="10" cellpadding="0" align="center">
+          <tr>
+            <td>
+              <img
+                src="https://tse4.mm.bing.net/th/id/OIP.8ANqbSwwSNzpWWmx1Ru0FQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3"
+                alt="Task 1"
+                width="300"
+                height="200"
+              />
+            </td>
+            <td>
+              <img
+                src="https://images.pexels.com/photos/2378278/pexels-photo-2378278.jpeg?cs=srgb&dl=pexels-shafi_fotumcatcher-1249695-2378278.jpg&fm=jpg"
+                alt="Task 2"
+                width="300"
+                height="200"
+              />
+            </td>
+            <td>
+              <img
+                src="https://images.pexels.com/photos/15171914/pexels-photo-15171914.jpeg?cs=srgb&dl=pexels-peter-kovesi-421914941-15171914.jpg&fm=jpg"
+                alt="Task 3"
+                width="300"
+                height="200"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" align="center">
+              <img
+                src="https://images.pexels.com/photos/417243/pexels-photo-417243.jpeg"
+                alt="Task 4"
+                width="600"
+                height="200"
+              />
+            </td>
+            <td>
+              <img
+                src="https://jooinn.com/images/pictures-1.jpg"
+                alt="Task 6"
+                width="300"
+                height="200"
+              />
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="nature-choice">
+        <h2>Pick Your Favorite Nature Mood</h2>
+        <form>
+          <label>
+            <input type="radio" name="nature" value="mountains" />
+            <span class="nature-radio">Mountains</span>
+          </label>
+          <label>
+            <input type="radio" name="nature" value="forest" />
+            <span class="nature-radio">Forest</span>
+          </label>
+          <label>
+            <input type="radio" name="nature" value="beach" />
+            <span class="nature-radio">Beach</span>
+          </label>
+          <label>
+            <input type="radio" name="nature" value="sunset" />
+            <span class="nature-radio">Sunset</span>
+          </label>
+        </form>
+        <h2>Adjust Brightness</h2>
+<input type="range" id="brightness" name="brightness" min="0" max="100" value="29" />
+<label for="brightness">Brightness Level</label>
+
+      </div>
+      
+
+    <div id="contact-form">
+      <h2>Contact Me</h2>
+      <form action="https://example.com/submit" method="post">
+        <input
+          type="text"
+          id="firstname"
+          name="first"
+          placeholder="Enter your First Name"
+          required
+        />
+        <input
+          type="text"
+          id="lastname"
+          name="last"
+          placeholder="Enter your Last Name"
+          required
+        />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Write down your message here..."
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+   
+
+    <hr />
+
+    <div id="newsletter">
+      <h2>Visit Site Again</h2>
+      <table align="center" cellspacing="10">
+        <tr>
+          <td>
+            <input
+              type="text"
+              placeholder="Enter your email"
+              required
+              class="newsletter-input"
+            />
+          </td>
+          <td>
+            <button class="subscribe-btn">Subscribe</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Madhee's Portfolio. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

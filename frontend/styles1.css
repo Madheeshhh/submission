@@ -1,0 +1,161 @@
+body {
+    margin: 0 auto;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    background-color: #f9f9f9;
+  }
+  
+  header,
+  section,
+  div {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  h1 {
+    font-size: 40px;
+    line-height: 54px;
+  }
+  
+  h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 300;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+  
+  a,
+  button {
+    background-color: #e81c50;
+    display: inline-block;
+    border-radius: 23px;
+    font-size: 20px;
+    line-height: 36px;
+    color: #ffffff;
+    padding: 10px 25px;
+    margin-top: 20px;
+    text-decoration: none;
+    border: none;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  a:hover,
+  button:hover {
+    background-color: #9ae81c;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  header {
+    background-image: url("https://unsplash.it/1900/700?image=120");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+  
+  header span {
+    color: #e81c50;
+  }
+  
+  #about p {
+    background-color: #fafafa;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  input,
+  textarea {
+    display: block;
+    width: 550px;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.5s ease;
+    border:1px solid light red;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #081ce8;
+    outline: none;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 50px auto;
+    width: 70%;
+  }
+  
+  #newsletter {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  
+  .subscribe-btn {
+    background-color:#e81c50;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 19px;
+  }
+  
+  .subscribe-btn:hover {
+    background-color: #9ae81c;
+  }
+  
+ footer{
+  background-color:grey;
+  color:white;
+ 
+ }
+ /* Nature choice section styling */
+.nature-choice {
+  text-align: center;
+  background-color: #f0f8f5;
+  padding: 50px 0;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 700px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nature-choice h2 {
+  color: #2e4d32;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* align horizontally without flex */
+.nature-choice form {
+  text-align: center;
+  display: inline-block; /* makes the form behave nicely inside center */
+}
+
+/* labels side by side */
+.nature-choice label {
+  display: inline-block;
+  margin: 10px 15px;
+  cursor: pointer;
+}
+
+/* hide native radios */
+.nature-choice input[type="radio"] {
+  display: none;
+}
