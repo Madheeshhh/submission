@@ -1,4 +1,4 @@
-﻿namespace BankManagementAPI.Models
+﻿namespace BankCustomerAPI.Models
 {
     public class Role
     {

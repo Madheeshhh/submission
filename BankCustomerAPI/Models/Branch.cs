@@ -1,6 +1,6 @@
 ﻿using System.Security.Principal;
 
-namespace BankManagementAPI.Models
+namespace BankCustomerAPI.Models
 {
     public class Branch
     {

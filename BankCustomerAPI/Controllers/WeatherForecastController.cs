@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace BankManagementAPI.Controllers
+namespace BankCustomerAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -8,7 +8,8 @@ namespace BankManagementAPI.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild",
+            "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
@@ -18,6 +19,10 @@ namespace BankManagementAPI.Controllers
             _logger = logger;
         }
 
-        
+        [HttpGet(Name = "GetWeatherForecast")]
+        public IEnumerable<string> Get()
+        {
+            return Summaries;
+        }
     }
 }

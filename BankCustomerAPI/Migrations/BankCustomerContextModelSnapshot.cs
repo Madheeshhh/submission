@@ -23,7 +23,7 @@ namespace BankManagementAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("BankManagementAPI.Models.Account", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.Account", b =>
                 {
                     b.Property<int>("AccountId")
                         .ValueGeneratedOnAdd()
@@ -83,7 +83,7 @@ namespace BankManagementAPI.Migrations
                     b.ToTable("Accounts", "training");
                 });
 
-            modelBuilder.Entity("BankManagementAPI.Models.Bank", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.Bank", b =>
                 {
                     b.Property<int>("BankId")
                         .ValueGeneratedOnAdd()
@@ -111,7 +111,7 @@ namespace BankManagementAPI.Migrations
                     b.ToTable("Banks", "training");
                 });
 
-            modelBuilder.Entity("BankManagementAPI.Models.Branch", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.Branch", b =>
                 {
                     b.Property<int>("BranchId")
                         .ValueGeneratedOnAdd()
@@ -149,7 +149,7 @@ namespace BankManagementAPI.Migrations
                     b.ToTable("Branches", "training");
                 });
 
-            modelBuilder.Entity("BankManagementAPI.Models.Permission", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.Permission", b =>
                 {
                     b.Property<int>("PermissionId")
                         .ValueGeneratedOnAdd()
@@ -166,7 +166,7 @@ namespace BankManagementAPI.Migrations
                     b.ToTable("Permissions", "training");
                 });
 
-            modelBuilder.Entity("BankManagementAPI.Models.Role", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.Role", b =>
                 {
                     b.Property<int>("RoleId")
                         .ValueGeneratedOnAdd()
@@ -183,7 +183,7 @@ namespace BankManagementAPI.Migrations
                     b.ToTable("Roles", "training");
                 });
 
-            modelBuilder.Entity("BankManagementAPI.Models.RolePermission", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.RolePermission", b =>
                 {
                     b.Property<int>("RoleId")
                         .HasColumnType("int");
@@ -198,7 +198,7 @@ namespace BankManagementAPI.Migrations
                     b.ToTable("RolePermissions", "training");
                 });
 
-            modelBuilder.Entity("BankManagementAPI.Models.User", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.User", b =>
                 {
                     b.Property<int>("UserId")
                         .ValueGeneratedOnAdd()
@@ -240,7 +240,7 @@ namespace BankManagementAPI.Migrations
                     b.ToTable("Users", "training");
                 });
 
-            modelBuilder.Entity("BankManagementAPI.Models.UserRole", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.UserRole", b =>
                 {
                     b.Property<int>("UserId")
                         .HasColumnType("int");
@@ -255,20 +255,20 @@ namespace BankManagementAPI.Migrations
                     b.ToTable("UserRoles", "training");
                 });
 
-            modelBuilder.Entity("BankManagementAPI.Models.Account", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.Account", b =>
                 {
-                    b.HasOne("BankManagementAPI.Models.Branch", "Branch")
+                    b.HasOne("BankCustomerAPI.Models.Branch", "Branch")
                         .WithMany("Accounts")
                         .HasForeignKey("BranchId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BankManagementAPI.Models.User", "PowerOfAttorneyUser")
+                    b.HasOne("BankCustomerAPI.Models.User", "PowerOfAttorneyUser")
                         .WithMany()
                         .HasForeignKey("PowerOfAttorneyUserId")
                         .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("BankManagementAPI.Models.User", "User")
+                    b.HasOne("BankCustomerAPI.Models.User", "User")
                         .WithMany("Accounts")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -281,15 +281,15 @@ namespace BankManagementAPI.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("BankManagementAPI.Models.Branch", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.Branch", b =>
                 {
-                    b.HasOne("BankManagementAPI.Models.Bank", "Bank")
+                    b.HasOne("BankCustomerAPI.Models.Bank", "Bank")
                         .WithMany("Branches")
                         .HasForeignKey("BankId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BankManagementAPI.Models.User", "Manager")
+                    b.HasOne("BankCustomerAPI.Models.User", "Manager")
                         .WithMany()
                         .HasForeignKey("ManagerUserId")
                         .OnDelete(DeleteBehavior.Restrict);
@@ -299,15 +299,15 @@ namespace BankManagementAPI.Migrations
                     b.Navigation("Manager");
                 });
 
-            modelBuilder.Entity("BankManagementAPI.Models.RolePermission", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.RolePermission", b =>
                 {
-                    b.HasOne("BankManagementAPI.Models.Permission", "Permission")
+                    b.HasOne("BankCustomerAPI.Models.Permission", "Permission")
                         .WithMany("RolePermissions")
                         .HasForeignKey("PermissionId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BankManagementAPI.Models.Role", "Role")
+                    b.HasOne("BankCustomerAPI.Models.Role", "Role")
                         .WithMany("RolePermissions")
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -318,15 +318,15 @@ namespace BankManagementAPI.Migrations
                     b.Navigation("Role");
                 });
 
-            modelBuilder.Entity("BankManagementAPI.Models.UserRole", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.UserRole", b =>
                 {
-                    b.HasOne("BankManagementAPI.Models.Role", "Role")
+                    b.HasOne("BankCustomerAPI.Models.Role", "Role")
                         .WithMany("UserRoles")
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("BankManagementAPI.Models.User", "User")
+                    b.HasOne("BankCustomerAPI.Models.User", "User")
                         .WithMany("UserRoles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -337,29 +337,29 @@ namespace BankManagementAPI.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("BankManagementAPI.Models.Bank", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.Bank", b =>
                 {
                     b.Navigation("Branches");
                 });
 
-            modelBuilder.Entity("BankManagementAPI.Models.Branch", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.Branch", b =>
                 {
                     b.Navigation("Accounts");
                 });
 
-            modelBuilder.Entity("BankManagementAPI.Models.Permission", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.Permission", b =>
                 {
                     b.Navigation("RolePermissions");
                 });
 
-            modelBuilder.Entity("BankManagementAPI.Models.Role", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.Role", b =>
                 {
                     b.Navigation("RolePermissions");
 
                     b.Navigation("UserRoles");
                 });
 
-            modelBuilder.Entity("BankManagementAPI.Models.User", b =>
+            modelBuilder.Entity("BankCustomerAPI.Models.User", b =>
                 {
                     b.Navigation("Accounts");
 

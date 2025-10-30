@@ -143,3 +143,5 @@ D:\Training\submission\BankCustomerAPI\obj\Debug\net8.0\refint\BankCustomerAPI.d
 D:\Training\submission\BankCustomerAPI\obj\Debug\net8.0\BankCustomerAPI.pdb
 D:\Training\submission\BankCustomerAPI\obj\Debug\net8.0\BankCustomerAPI.genruntimeconfig.cache
 D:\Training\submission\BankCustomerAPI\obj\Debug\net8.0\ref\BankCustomerAPI.dll
+D:\Training\submission\BankCustomerAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Training\submission\BankCustomerAPI\bin\Debug\net8.0\BouncyCastle.Crypto.dll

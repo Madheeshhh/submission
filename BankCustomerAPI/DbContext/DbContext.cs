@@ -1,5 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using BankManagementAPI.Models;
+
+using BankCustomerAPI.Models;
+using BankCustomerAPI.Services;
+using static System.Collections.Specialized.BitVector32;
 
 namespace BankCustomerAPI.Data
 {
