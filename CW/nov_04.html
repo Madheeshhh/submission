@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>60 CSS Colors</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+  }
+#colorContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin: 20px;
+  }
+ .colors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+ }
+ .h1color{
+    text-align: center;
+ }
+  .colorBox {
+    border: 5px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    color: #000;
+    transition: transform 0.2s ease;
+  }
+ 
+  .colorBox:hover {
+    transform: scale(1.05);
+  }
+ 
+  .colorName {
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 9px;
+  }
+button {
+  box-shadow: 2px 8px 9px rgba(0, 0, 0, 0.2);
+    margin: 14px;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 8px;
+  }
+  /* by default Light Mode (default) */
+
+
+
+/*  Dark Mode */
+body.dark-mode {
+  background: #1e1e1e;
+  color: #f1f1f1;
+}
+
+/* Make text and boxes match the dark theme */
+body.dark-mode h1 {
+  color: #fff;
+}
+
+body.dark-mode .colorBox {
+  border-color: #f1f1f1;
+}
+
+body.dark-mode button {
+  background: white ;
+  color: black;
+}
+
+body.dark-mode button:hover {
+  background: white;
+}
+#timedate{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 5px dashed black; /* just to visualize */
+}
+#dateTimeBox{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  box-shadow: 2px 8px 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    background-color: red;
+    color: #fff;
+}
+
+</style> 
+
+</head>
+<body>
+  <div id="timedate">
+    <h1>Current Date and Time</h1>
+    <p id="dateTimeBox"></p>
+  </div>
+ 
+  <h1 class="h1color">CSS Colors</h1>
+<div class="colors">
+<button onclick="showColors()">Show Colors</button>
+<button onclick="closeColors()">Close</button>
+<img src="sun.svg" id="modeToggle" onclick="toggleMode()"></img> <!-- by default Light Mode -->
+</div>
+ 
+<div id="colorContainer"></div>
+ 
+<script>
+  function showDateTime() {
+  const now = new Date(); // gets current date & time
+  const date = now.toLocaleDateString(); // ex: "11/4/2025"
+  const time = now.toLocaleTimeString(); // ex: "10:24:55 AM"
+  document.getElementById("dateTimeBox").textContent = `${date} ${time}`;
+}
+
+// show immediately
+showDateTime();
+
+// update every second
+setInterval(showDateTime, 2000);
+
+function closeColors() {
+  const container = document.getElementById("colorContainer");
+  container.innerHTML = ""; // Clear the colors
+}
+function showColors() {
+  const colors = [
+    "AliceBlue", "AntiqueWhite", "Aqua", "Aquamarine", "Azure",
+    "Beige", "Bisque", "Black", "BlanchedAlmond", "Blue",
+    "BlueViolet", "Brown", "BurlyWood", "CadetBlue", "Chartreuse",
+    "Chocolate", "Coral", "CornflowerBlue", "Cornsilk", "Crimson",
+    "Cyan", "DarkBlue", "DarkCyan", "DarkGoldenRod", "DarkGray",
+    "DarkGreen", "DarkKhaki", "DarkMagenta", "DarkOliveGreen", "DarkOrange",
+    "DarkOrchid", "DarkRed", "DarkSalmon", "DarkSeaGreen", "DarkSlateBlue",
+    "DarkSlateGray", "DarkTurquoise", "DarkViolet", "DeepPink", "DeepSkyBlue",
+    "DimGray", "DodgerBlue", "FireBrick", "FloralWhite", "ForestGreen",
+    "Fuchsia", "Gainsboro", "GhostWhite", "Gold", "GoldenRod",
+    "Gray", "Green", "GreenYellow", "HoneyDew", "HotPink",
+    "IndianRed", "Indigo", "Ivory", "Khaki", "Lavender"
+  ];
+ 
+  const container = document.getElementById("colorContainer");
+  container.innerHTML = ""; // Clear any previous colors
+ 
+  colors.forEach(color => {
+    const box = document.createElement("div");
+    box.className = "colorBox";
+    box.style.backgroundColor = color;
+    box.innerHTML = `<div class="colorName">${color}</div>`;
+    container.appendChild(box);
+  });
+}
+function toggleMode() {
+  const body = document.body; // select the <body>
+  const toggleBtn = document.getElementById("modeToggle"); // the button
+
+  // This line adds "dark-mode" if it's not there, or removes it if it is
+  body.classList.toggle("dark-mode");
+
+  // Change the button text to match the current mode
+  if (body.classList.contains("dark-mode")) {
+    toggleBtn.src = "sunw.svg";  // when dark mode is active
+    toggleBtn.alt = "Switch to Light Mode";
+  } else {
+    toggleBtn.src = "sun.svg";  // when light mode is active
+  }
+}
+
+</script>
+ 
+</body>
+</html>
