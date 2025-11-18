@@ -3,7 +3,31 @@
   "WorkspaceRootPath": "D:\\Training\\submission\\BankCustomerAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{01FD6B8C-2B31-44AB-99F1-5B67AE7B2F64}|BankCustomerAPI\\BankCustomerAPI.csproj|d:\\training\\submission\\bankcustomerapi\\bankcustomerapi\\dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{01FD6B8C-2B31-44AB-99F1-5B67AE7B2F64}|BankCustomerAPI\\BankCustomerAPI.csproj|D:\\Training\\submission\\BankCustomerAPI\\bankcustomerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01FD6B8C-2B31-44AB-99F1-5B67AE7B2F64}|BankCustomerAPI\\BankCustomerAPI.csproj|solutionrelative:bankcustomerapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01FD6B8C-2B31-44AB-99F1-5B67AE7B2F64}|BankCustomerAPI\\BankCustomerAPI.csproj|D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{01FD6B8C-2B31-44AB-99F1-5B67AE7B2F64}|BankCustomerAPI\\BankCustomerAPI.csproj|solutionrelative:BankCustomerAPI\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01FD6B8C-2B31-44AB-99F1-5B67AE7B2F64}|BankCustomerAPI\\BankCustomerAPI.csproj|d:\\training\\submission\\bankcustomerapi\\bankcustomerapi\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01FD6B8C-2B31-44AB-99F1-5B67AE7B2F64}|BankCustomerAPI\\BankCustomerAPI.csproj|solutionrelative:bankcustomerapi\\controllers\\accountscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01FD6B8C-2B31-44AB-99F1-5B67AE7B2F64}|BankCustomerAPI\\BankCustomerAPI.csproj|D:\\Training\\submission\\BankCustomerAPI\\bankcustomerapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{01FD6B8C-2B31-44AB-99F1-5B67AE7B2F64}|BankCustomerAPI\\BankCustomerAPI.csproj|solutionrelative:bankcustomerapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01FD6B8C-2B31-44AB-99F1-5B67AE7B2F64}|BankCustomerAPI\\BankCustomerAPI.csproj|D:\\Training\\submission\\BankCustomerAPI\\bankcustomerapi\\bankcustomerapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{01FD6B8C-2B31-44AB-99F1-5B67AE7B2F64}|BankCustomerAPI\\BankCustomerAPI.csproj|solutionrelative:bankcustomerapi\\bankcustomerapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01FD6B8C-2B31-44AB-99F1-5B67AE7B2F64}|BankCustomerAPI\\BankCustomerAPI.csproj|d:\\training\\submission\\bankcustomerapi\\bankcustomerapi\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{01FD6B8C-2B31-44AB-99F1-5B67AE7B2F64}|BankCustomerAPI\\BankCustomerAPI.csproj|solutionrelative:bankcustomerapi\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{01FD6B8C-2B31-44AB-99F1-5B67AE7B2F64}|BankCustomerAPI\\BankCustomerAPI.csproj|D:\\Training\\submission\\BankCustomerAPI\\bankcustomerapi\\dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{01FD6B8C-2B31-44AB-99F1-5B67AE7B2F64}|BankCustomerAPI\\BankCustomerAPI.csproj|solutionrelative:bankcustomerapi\\dbcontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -13,8 +37,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 483,
-          "SelectedChildIndex": -1,
+          "DockedHeight": 162,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -27,29 +51,108 @@
             {
               "$type": "Bookmark",
               "Name": "ST:16:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountsController.cs",
+              "DocumentMoniker": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI\\Controllers\\AccountsController.cs",
+              "RelativeDocumentMoniker": "BankCustomerAPI\\Controllers\\AccountsController.cs",
+              "ToolTip": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI\\Controllers\\AccountsController.cs",
+              "RelativeToolTip": "BankCustomerAPI\\Controllers\\AccountsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T11:31:57.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "BankCustomerAPI\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI\\Properties\\launchSettings.json",
+              "RelativeToolTip": "BankCustomerAPI\\Properties\\launchSettings.json",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowDMAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-18T09:51:27.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BankCustomerAPI",
+              "DocumentMoniker": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI\\BankCustomerAPI.csproj",
+              "RelativeDocumentMoniker": "BankCustomerAPI\\BankCustomerAPI.csproj",
+              "ToolTip": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI\\BankCustomerAPI.csproj",
+              "RelativeToolTip": "BankCustomerAPI\\BankCustomerAPI.csproj",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-18T09:51:20.721Z"
             }
           ]
         },
         {
-          "DockedHeight": 61,
-          "SelectedChildIndex": 0,
+          "DockedHeight": 382,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI\\Services\\JwtService.cs",
+              "RelativeDocumentMoniker": "BankCustomerAPI\\Services\\JwtService.cs",
+              "ToolTip": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI\\Services\\JwtService.cs",
+              "RelativeToolTip": "BankCustomerAPI\\Services\\JwtService.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T09:50:07.591Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI\\Program.cs",
+              "RelativeDocumentMoniker": "BankCustomerAPI\\Program.cs",
+              "ToolTip": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI\\Program.cs",
+              "RelativeToolTip": "BankCustomerAPI\\Program.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAQwGkAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T09:50:04.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "BankCustomerAPI\\appsettings.json",
+              "ToolTip": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI\\appsettings.json",
+              "RelativeToolTip": "BankCustomerAPI\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-18T09:14:35.518Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI\\DbContext\\AppDbContext.cs",
               "RelativeDocumentMoniker": "BankCustomerAPI\\DbContext\\AppDbContext.cs",
               "ToolTip": "D:\\Training\\submission\\BankCustomerAPI\\BankCustomerAPI\\DbContext\\AppDbContext.cs",
               "RelativeToolTip": "BankCustomerAPI\\DbContext\\AppDbContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAiwA0AAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-18T09:13:46.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "WhenOpened": "2025-11-18T09:13:46.274Z"
             }
           ]
         }
